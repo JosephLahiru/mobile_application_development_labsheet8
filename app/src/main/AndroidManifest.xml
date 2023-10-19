@@ -12,7 +12,16 @@
         android:theme="@style/Theme.Mobile_application_development_labsheet8"
         tools:targetApi="31">
         <activity
-            android:name=".MainActivity"
+            android:name=".exercise.AddActivity"
+            android:exported="false" />
+        <activity
+            android:name=".example_01_inserting_data_into_a_table_using_sqlite.MainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".example_01_inserting_data_into_a_table_using_sqlite.AddActivity"
+            android:exported="false" />
+        <activity
+            android:name=".exercise.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
