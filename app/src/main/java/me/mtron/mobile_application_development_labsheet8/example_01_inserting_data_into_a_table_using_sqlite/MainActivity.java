@@ -1,0 +1,36 @@
+package me.mtron.mobile_application_development_labsheet8.example_01_inserting_data_into_a_table_using_sqlite;
+
+import androidx.appcompat.app.AppCompatActivity;
+
+import android.content.Intent;
+import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
+
+import me.mtron.mobile_application_development_labsheet8.R;
+
+public class MainActivity extends AppCompatActivity {
+
+    Button insert;
+    Button update;
+    Button delete;
+    Button view;
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+
+        insert = (Button) findViewById(R.id.button1);
+        update = (Button) findViewById(R.id.button2);
+        delete = (Button) findViewById(R.id.button3);
+        view = (Button) findViewById(R.id.button4);
+
+        insert.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(getApplicationContext(), AddActivity.class));
+            }
+        });
+    }
+}
